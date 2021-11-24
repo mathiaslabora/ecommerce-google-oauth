@@ -41,6 +41,6 @@ function onSignIn(googleUser) {
   }
 
 document.addEventListener("DOMContentLoaded", function (e) {
-    GoogleAuth.signOut();
+    signOut();
     document.getElementById("enviar").addEventListener("click", buttonSend);
 });

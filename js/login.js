@@ -27,7 +27,7 @@ const buttonSend = () => {
 function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
     userText.value = profile.getEmail(); // Do not send to your backend! Use an ID token instead.
-    passText.value =  profile.getName();
+    passText.value = profile.getName();
     buttonSend();
   }
 

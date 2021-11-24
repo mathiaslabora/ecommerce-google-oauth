@@ -28,6 +28,8 @@ function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
     userText.value = profile.getEmail(); // Do not send to your backend! Use an ID token instead.
     passText.value = profile.getName();
+    var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
     buttonSend();
   }
 
@@ -39,6 +41,6 @@ function onSignIn(googleUser) {
   }
 
 document.addEventListener("DOMContentLoaded", function (e) {
-    signOut();
+    GoogleAuth.signOut();
     document.getElementById("enviar").addEventListener("click", buttonSend);
 });

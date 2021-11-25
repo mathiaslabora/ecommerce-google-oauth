@@ -9,8 +9,15 @@
 
   <meta name="google-signin-client_id"
     content="26595326380-pij683beon1bl394fmblkivr7bg37j3c.apps.googleusercontent.com">
-
+    <script>
+      function onLoad() {
+          gapi.load('auth2', function() {
+              gapi.auth2.init();
+          });
+      }
+  </script>
  
+ <script src="https://apis.google.com/js/platform.js" async defer></script>
   
   <title>eMercado - Todo lo que busques está aquí</title>
 
@@ -66,7 +73,6 @@
 
   </form>
   <img src="img/login.png" alt="imagen login">
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
   <script src="js/login.js"></script>
   
 </body>

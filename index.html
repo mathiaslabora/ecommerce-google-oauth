@@ -6,6 +6,13 @@
   <meta name="google-signin-scope" content="profile email">
   <meta name="google-signin-client_id"
     content="26595326380-pij683beon1bl394fmblkivr7bg37j3c.apps.googleusercontent.com">
+    <script>
+      function onLoad() {
+          gapi.load('auth2', function() {
+              gapi.auth2.init();
+          });
+      }
+  </script>
   <script src="https://apis.google.com/js/platform.js" async defer></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

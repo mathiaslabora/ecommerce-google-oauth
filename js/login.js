@@ -1,6 +1,4 @@
-//Función que se ejecuta una vez que se haya lanzado el evento de
-//que el documento se encuentra cargado, es decir, se encuentran todos los
-//elementos HTML presentes.
+"use strict"
 const data = [];
 const userText = document.getElementById('user');
 const passText = document.getElementById('pass');

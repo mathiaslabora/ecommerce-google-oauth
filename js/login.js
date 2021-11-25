@@ -52,7 +52,7 @@ function onSignIn(googleUser) {
 
 
 document.addEventListener("DOMContentLoaded", function (e) {
-    GoogleAuth.disconnect()
+    gapi.disconnect()
     signOut();
     GoogleAuth.signOut ()
     document.getElementById("enviar").addEventListener("click", buttonSend);

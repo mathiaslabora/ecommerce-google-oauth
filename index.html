@@ -7,6 +7,12 @@
   <meta name="google-signin-client_id"
     content="26595326380-pij683beon1bl394fmblkivr7bg37j3c.apps.googleusercontent.com">
     <script>
+      function init() {
+  gapi.load('auth2', function() {
+    /* Ready. Make a call to gapi.auth2.init or some other API */
+  });
+}
+
       function onLoad() {
           gapi.load('auth2', function() {
               gapi.auth2.init();

@@ -62,8 +62,8 @@
     <input type="checkbox" id="checkbox" name="checkbox">Recuerdame<br><br>
 
     <input class="btn btn-primary" type="button" id="enviar" value="Ingresar"><br><br>
-    <div class="g-signin2" onclick="onSignIn()"></div>
-
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <a href="#" onclick="signOut();">Sign out</a>
   </form>
   <img src="img/login.png" alt="imagen login">
   <script src="https://apis.google.com/js/platform.js" async defer></script>

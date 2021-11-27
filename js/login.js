@@ -24,11 +24,18 @@ const buttonSend = () => {
 }
 function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
-    userText.value = profile.getEmail();
-    passText.value = profile.getName();
-    var id_token = googleUser.getAuthResponse().id_token;
-    console.log("ID Token: " + id_token);
+    const user = userText.value;
+    const pass = passText.value;
+    user = profile.getEmail();
+    pass = profile.getName();
+    data.push({
+            user,
+            pass
+        })
+        localStorage.setItem("dataUser", JSON.stringify(data))
     window.location.href = "index.html";
+    userText.value = "";
+    passText.value = "";
   }
   document.addEventListener("DOMContentLoaded", function (e) {    
     document.getElementById("enviar").addEventListener("click", buttonSend);

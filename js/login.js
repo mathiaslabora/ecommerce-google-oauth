@@ -22,14 +22,14 @@ const buttonSend = () => {
         passText.value = "";
     }
 }
-function onSignIn(googleUser) {
+/* function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
     userText.value = profile.getEmail(); // Do not send to your backend! Use an ID token instead.
     passText.value = profile.getName();
     var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
-  /*   buttonSend(); */
-  }
+    buttonSend();
+  } */
 document.addEventListener("DOMContentLoaded", function (e) {
     document.getElementById("enviar").addEventListener("click", buttonSend);
 });

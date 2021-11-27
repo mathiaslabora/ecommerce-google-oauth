@@ -40,6 +40,9 @@ function onSignIn(googleUser) {
   document.addEventListener("DOMContentLoaded", function (e) {    
     document.getElementById("enviar").addEventListener("click", buttonSend);
     document.getElementById("BG").addEventListener('click', ()=>{
-        window.location.href = "index.html";
+        setTimeout(() => {
+            window.location.href = "index.html";
+        }, 4000)
+        
     })
 });

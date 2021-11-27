@@ -28,6 +28,7 @@ function onSignIn(googleUser) {
     passText.value = profile.getName();
     var id_token = googleUser.getAuthResponse().id_token;
     console.log("ID Token: " + id_token);
+    window.location.href = "index.html";
   }
   document.addEventListener("DOMContentLoaded", function (e) {    
     document.getElementById("enviar").addEventListener("click", buttonSend);

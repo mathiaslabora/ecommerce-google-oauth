@@ -50,12 +50,11 @@ function onSignIn(googleUser) {
   }
    */
 
+  gapi.load('auth2', function(){
+    gapi.auth2.init();
+});
 
 document.addEventListener("DOMContentLoaded", function (e) {
-      gapi.load('auth2', function(){
-          gapi.auth2.init();
-      });
-
       gapi.auth2.signOut()
     document.getElementById("enviar").addEventListener("click", buttonSend);
 });

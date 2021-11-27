@@ -29,7 +29,8 @@ function onSignIn(googleUser) {
     var id_token = googleUser.getAuthResponse().id_token;
     console.log("ID Token: " + id_token);
   }
+  signOut()
 document.addEventListener("DOMContentLoaded", function (e) {
-    signOut()
+    
     document.getElementById("enviar").addEventListener("click", buttonSend);
 });

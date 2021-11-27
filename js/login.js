@@ -28,32 +28,8 @@ function onSignIn(googleUser) {
     passText.value = profile.getName();
     var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
-    buttonSend();
+  /*   buttonSend(); */
   }
-
- /*  function init() {
-    gapi.load('auth2', function() {
-    });
-  }
-        function onLoad() {
-            gapi.load('auth2', function() {
-                gapi.auth2.init();
-            });
-        }
-         */
-
- /*  function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      console.log('User signed out.');
-    });
-  }
-   */
-
-  gapi.load('auth2', function(){
-    gapi.auth2.init();
-});
-
 document.addEventListener("DOMContentLoaded", function (e) {
     document.getElementById("enviar").addEventListener("click", buttonSend);
 });

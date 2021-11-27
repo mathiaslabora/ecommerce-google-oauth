@@ -55,6 +55,5 @@ function onSignIn(googleUser) {
 });
 
 document.addEventListener("DOMContentLoaded", function (e) {
-      gapi.auth2.signOut()
     document.getElementById("enviar").addEventListener("click", buttonSend);
 });

@@ -12,6 +12,14 @@
  
  <script src="https://apis.google.com/js/platform.js" async defer></script>
  <script>
+
+window.onLoadCallback = function(){
+  gapi.auth2.init({
+      client_id: '26595326380-pij683beon1bl394fmblkivr7bg37j3c.apps.googleusercontent.com'
+    });
+}
+
+
   function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {

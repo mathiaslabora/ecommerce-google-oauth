@@ -10,7 +10,7 @@
   <meta name="google-signin-client_id"
     content="26595326380-pij683beon1bl394fmblkivr7bg37j3c.apps.googleusercontent.com">
  
- <script src="https://apis.google.com/js/api.js" async defer></script>
+ <script src="https://apis.google.com/js/platform.js" async defer></script>
  <script>
   function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
@@ -70,6 +70,7 @@
     <input type="checkbox" id="checkbox" name="checkbox">Recuerdame<br><br>
 
     <input class="btn btn-primary" type="button" id="enviar" value="Ingresar"><br><br>
+
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
     <a href="#" onclick="signOut();">Sign out</a>
 

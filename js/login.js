@@ -33,7 +33,7 @@ function onSignIn(googleUser) {
             pass
         })
         localStorage.setItem("dataUser", JSON.stringify(data))
-    window.location.href = "index.html";
+    /* window.location.href = "index.html"; */
     userText.value = "";
     passText.value = "";
   }

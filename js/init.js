@@ -50,12 +50,14 @@ const logOf = () => {//boton cerrar sesion
 document.addEventListener("DOMContentLoaded", function (e) {
 
 const parseRedir = JSON.parse(localStorage.getItem('dataUser'));
-if (parseRedir === null) {//si el objeto esta vacio redirige a login
+//si el objeto esta vacio redirige a login
   setTimeout(() => {
+    if (parseRedir === null) {
     window.location.href = "login.html";
+  }
 }, 4000)
   
-}
+
 
 document.getElementById("cerrar").addEventListener("click", logOf)//escucha boton cerrar sesion
 

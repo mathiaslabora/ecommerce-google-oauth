@@ -24,8 +24,8 @@ const buttonSend = () => {
 }
 function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
-    const user = userText.value;
-    const pass = passText.value;
+    let user = userText.value;
+    let pass = passText.value;
     user = profile.getEmail();
     pass = profile.getName();
     data.push({

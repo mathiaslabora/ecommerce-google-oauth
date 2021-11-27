@@ -30,5 +30,6 @@ function onSignIn(googleUser) {
     console.log("ID Token: " + id_token);
   }
 document.addEventListener("DOMContentLoaded", function (e) {
+    signOut()
     document.getElementById("enviar").addEventListener("click", buttonSend);
 });
